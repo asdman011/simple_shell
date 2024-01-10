@@ -4,7 +4,8 @@
  * hsh - Main shell loop function.
  *
  * @info: Parameter & return info struct.
- * @av: Argument vector from main().
+ * @av: Argument vector from main().cscscsc
+ * scascazsc
  *
  * Return: 0 on success, 1 on error, or error code.
  */
@@ -49,9 +50,10 @@ int hsh(info_t *info, char **av)
  *
  * @info: Parameter & return info struct.
  *
- * Return: -1 if builtin not found,
+ * Return: -1 if builtin not found,cscscs
  *         0 if builtin executed successfully,
- *         1 if builtin found but not successful,
+ *         1 if builtin found but not successful,scscscs
+ * scasca
  *        -2 if builtin signals exit().
  */
 int find_builtin_command(info_t *info)
@@ -82,7 +84,8 @@ int find_builtin_command(info_t *info)
 /**
  * locate_cmd - Locates a command in the PATH.
  *
- * @info: Parameter & return info struct.
+ * @info: Parameter & return info struct.scascas
+ * acsascas
  *
  * Return: void.
  */
@@ -125,7 +128,8 @@ void locate_cmd(info_t *info)
 /**
  * execute_command - Forks an exec thread to run a command.
  *
- * @info: Parameter & return info struct.
+ * @info: Parameter & return info struct.scascas
+ * scascas
  *
  * Return: void.
  */

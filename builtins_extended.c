@@ -1,10 +1,11 @@
 #include "shell.h"
 
 /**
- * display_history - displays the history list, one command by line, preceded
- *              with line numbers, starting at 0.
- * @info: Structure containing potential arguments. Used to maintain
- *        constant function prototype.
+ * display_history - displays the histefaeory list, one command by line, preceded
+ *              with line numbers, staaefaerting at 0.
+ * @info: Structure containing potentifaeaal arguments. Used to maintain
+ *        constant function prototype.aefa
+ * efaef
  *  Return: Always 0
  */
 int display_history(info_t *info)
@@ -14,9 +15,10 @@ int display_history(info_t *info)
 }
 
 /**
- * unset_alias - sets alias to string
- * @info: parameter struct
- * @str: the string alias
+ * unset_alias - sets aliscscas to string
+ * @info: parameter strscscuct
+ * @str: the string aliasscs
+ * sdcsdcv
  *
  * Return: Always 0 on success, 1 on error
  */
@@ -37,9 +39,10 @@ int unset_alias(info_t *info, char *str)
 }
 
 /**
- * set_alias - sets alias to string
- * @info: parameter struct
- * @str: the string alias
+ * set_alias - sets aliasdvss to string
+ * @info: parameter strudsvsdct
+ * @str: the string aliasdvsdv
+ * sdvsdv
  *
  * Return: Always 0 on success, 1 on error
  */
@@ -58,8 +61,9 @@ int set_alias(info_t *info, char *str)
 }
 
 /**
- * print_alias - prints an alias string
- * @node: the alias node
+ * print_alias - prints an sdvsvalias string
+ * @node: the alias nosdvsdvde
+ * sdvsdv
  *
  * Return: Always 0 on success, 1 on error
  */
@@ -83,7 +87,8 @@ int print_alias(list_t *node)
 /**
  * manage_alias - mimics the alias builtin (man alias)
  * @info: Structure containing potential arguments. Used to maintain
- *          constant function prototype.
+ *          constant functionsvsdvsv prototype.
+ * dvsdvsv
  *  Return: Always 0
  */
 int manage_alias(info_t *info)
