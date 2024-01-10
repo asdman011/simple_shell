@@ -174,42 +174,42 @@ char *convert_number(long int, int, int);
 void remove_comments(char *);
 
 /* asd_builtin.c */
-int _myexit(info_t *);
-int _mycd(info_t *);
-int _myhelp(info_t *);
+int exit_shell(info_t *);
+int change_directory(info_t *);
+int display_help(info_t *);
 
 /* asd_builtin1.c */
-int _myhistory(info_t *);
-int _myalias(info_t *);
+int display_history(info_t *);
+int manage_alias(info_t *);
 
 /*asd_getline.c */
-ssize_t get_input(info_t *);
-int _getline(info_t *, char **, size_t *);
-void sigintHandler(int);
+ssize_t read_input(info_t *);
+int get_line(info_t *, char **, size_t *);
+void handle_interrupt_signal(int);
 
 /* asd_getinfo.c */
-void clear_info(info_t *);
-void set_info(info_t *, char **);
-void free_info(info_t *, int);
+void clear_sh_info(info_t *);
+void set_sh_info(info_t *, char **);
+void free_sh_info(info_t *, int);
 
 /* asd_environ.c */
-char *_getenv(info_t *, const char *);
-int _myenv(info_t *);
-int _mysetenv(info_t *);
-int _myunsetenv(info_t *);
-int populate_env_list(info_t *);
+char *get_environment_variable(info_t *, const char *);
+int display_environment(info_t *);
+int set_environment_variable(info_t *);
+int unset_environment_variable(info_t *);
+int populate_env_ls(info_t *);
 
 /* asd_getenv.c */
-char **get_environ(info_t *);
+char **get_environment_variables(info_t *);
 int _unsetenv(info_t *, char *);
 int _setenv(info_t *, char *, char *);
 
 /* asd_history.c */
-char *get_history_file(info_t *info);
-int write_history(info_t *info);
-int read_history(info_t *info);
-int build_history_list(info_t *info, char *buf, int linecount);
-int renumber_history(info_t *info);
+char *get_shell_history_file(info_t *info);
+int save_shell_history(info_t *info);
+int load_shell_history(info_t *info);
+int build_shell_history_list(info_t *info, char *buf, int linecount);
+int renumber_shell_history(info_t *info);
 
 /* asd_lists.c */
 list_t *create_node(list_t **, const char *, int);

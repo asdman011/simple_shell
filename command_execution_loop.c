@@ -14,24 +14,24 @@ int hsh(info_t *info, char **av)
 
 	while (r != -1 && builtin_ret != -2)
 	{
-		clear_info(info);
+		clear_sh_info(info);
 		if (interactive_mode(info))
 			_puts("$ ");
 		_eputchar(BUF_FLUSH);
-		r = get_input(info);
+		r = read_input(info);
 		if (r != -1)
 		{
-			set_info(info, av);
+			set_sh_info(info, av);
 			builtin_ret = find_builtin_command(info);
 			if (builtin_ret == -1)
 				locate_cmd(info);
 		}
 		else if (interactive_mode(info))
 			_putchar('\n');
-		free_info(info, 0);
+		free_sh_info(info, 0);
 	}
-	write_history(info);
-	free_info(info, 1);
+	save_shell_history(info);
+	free_sh_info(info, 1);
 	if (!interactive_mode(info) && info->status)
 		exit(info->status);
 	if (builtin_ret == -2)
@@ -56,14 +56,14 @@ int find_builtin_command(info_t *info)
 {
 	int i, built_in_ret = -1;
 	builtin_table builtintbl[] = {
-		{"exit", _myexit},
-		{"env", _myenv},
-		{"help", _myhelp},
-		{"history", _myhistory},
-		{"setenv", _mysetenv},
-		{"unsetenv", _myunsetenv},
-		{"cd", _mycd},
-		{"alias", _myalias},
+		{"exit", exit_shell},
+		{"env", display_environment},
+		{"help", display_help},
+		{"history", display_history},
+		{"setenv", set_environment_variable},
+		{"unsetenv", unset_environment_variable},
+		{"cd", change_directory},
+		{"alias", manage_alias},
 		{NULL, NULL}
 	};
 
@@ -100,7 +100,7 @@ void locate_cmd(info_t *info)
 	if (!k)
 		return;
 
-	path = find_executable_path(info, _getenv(info, "PATH="), info->argv[0]);
+	path = find_executable_path(info, get_environment_variable(info, "PATH="), info->argv[0]);
 	if (path)
 	{
 		info->path = path;
@@ -108,7 +108,7 @@ void locate_cmd(info_t *info)
 	}
 	else
 	{
-		if ((interactive_mode(info) || _getenv(info, "PATH=")
+		if ((interactive_mode(info) || get_environment_variable(info, "PATH=")
 			|| info->argv[0][0] == '/') && is_command(info, info->argv[0]))
 			execute_command(info);
 		else if (*(info->arg) != '\n')
@@ -138,9 +138,9 @@ void execute_command(info_t *info)
 	}
 	if (child_pid == 0)
 	{
-		if (execve(info->path, info->argv, get_environ(info)) == -1)
+		if (execve(info->path, info->argv, get_environment_variables(info)) == -1)
 		{
-			free_info(info, 1);
+			free_sh_info(info, 1);
 			if (errno == EACCES)
 				exit(126);
 			exit(1);
