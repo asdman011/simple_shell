@@ -158,11 +158,11 @@ void free_memory(char **);
 void *_relloc(void *, unsigned int, unsigned int);
 
 /* asd_memory.c */
-int bfree(void **);
+int bulk_free(void **);
 
 /* asd_atoi.c */
-int interactive(info_t *);
-int is_delim(char, char *);
+int interactive_mode(info_t *);
+int is_delimiter(char, char *);
 int _isalpha(int);
 int _atoi(char *);
 
@@ -226,10 +226,10 @@ list_t *node_starts_with(list_t *, char *, char);
 ssize_t get_node_index(list_t *, list_t *);
 
 /* asd_vars.c */
-int is_chain(info_t *, char *, size_t *);
-void check_chain(info_t *, char *, size_t *, size_t, size_t);
-int replace_alias(info_t *);
-int replace_vars(info_t *);
-int replace_string(char **, char *);
+int is_var_chain(info_t *, char *, size_t *);
+void inspect_var_chain(info_t *, char *, size_t *, size_t, size_t);
+int substitute_alias(info_t *);
+int substitute_variables(info_t *);
+int substitute_string(char **, char *);
 
 #endif
