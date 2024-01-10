@@ -2,9 +2,8 @@
 
 /**
  * display_environment - prints the current environment
- * aesdfA
  * @info: Structure containing potential arguments. Used to maintain
- *constant function prototype.
+ *          constant function prototype.
  * Return: Always 0
  */
 int display_environment(info_t *info)
@@ -17,7 +16,7 @@ int display_environment(info_t *info)
  * get_environment_variable - gets the value of an environ variable
  * @info: Structure containing potential arguments. Used to maintain
  * @name: env var name
- *SDVD\S
+ *
  * Return: the value
  */
 char *get_environment_variable(info_t *info, const char *name)
@@ -37,9 +36,9 @@ char *get_environment_variable(info_t *info, const char *name)
 
 /**
  * set_environment_variable - Initialize a new environment variable,
- *or modify an existing one
+ *             or modify an existing one
  * @info: Structure containing potential arguments. Used to maintain
- *constant function prototype.
+ *        constant function prototype.
  *  Return: Always 0
  */
 int set_environment_variable(info_t *info)
@@ -57,7 +56,7 @@ int set_environment_variable(info_t *info)
 /**
  * unset_environment_variable - Remove an environment variable
  * @info: Structure containing potential arguments. Used to maintain
- * IUconstant function prototype.
+ *        constant function prototype.
  *  Return: Always 0
  */
 int unset_environment_variable(info_t *info)
@@ -78,7 +77,7 @@ int unset_environment_variable(info_t *info)
 /**
  * populate_env_ls - populates env linked list
  * @info: Structure containing potential arguments. Used to maintain
- * H constant function prototype.
+ *          constant function prototype.
  * Return: Always 0
  */
 int populate_env_ls(info_t *info)
