@@ -126,10 +126,10 @@ char *find_executable_path(info_t *, char *, char *);
 int shell_loop(char **);
 
 /* asd_errors.c */
-void _eputs(char *);
-int _eputchar(char);
-int _putfd(char c, int fd);
-int _putsfd(char *str, int fd);
+void print_error_string(char *);
+int print_error_string(char);
+int write_char_to_fd(char c, int fd);
+int write_string_to_fd(char *str, int fd);
 
 /* asd_string.c */
 int _strlen(char *);

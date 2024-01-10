@@ -45,10 +45,10 @@ int write_history(info_t *info)
 		return (-1);
 	for (node = info->history; node; node = node->next)
 	{
-		_putsfd(node->str, fd);
-		_putfd('\n', fd);
+		write_string_to_fd(node->str, fd);
+		write_char_to_fd('\n', fd);
 	}
-	_putfd(BUF_FLUSH, fd);
+	write_char_to_fd(BUF_FLUSH, fd);
 	close(fd);
 	return (1);
 }
