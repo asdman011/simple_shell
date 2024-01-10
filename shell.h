@@ -153,9 +153,9 @@ char **strtow(char *, char *);
 char **strtow2(char *, char);
 
 /* asd_realloc.c */
-char *_memset(char *, char, unsigned int);
-void ffree(char **);
-void *_realloc(void *, unsigned int, unsigned int);
+char *set_memory(char *, char, unsigned int);
+void free_memory(char **);
+void *_relloc(void *, unsigned int, unsigned int);
 
 /* asd_memory.c */
 int bfree(void **);
