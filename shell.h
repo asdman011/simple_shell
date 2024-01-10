@@ -66,32 +66,32 @@ typedef struct liststr
  * @environ: Custom modified copy of environ from linked list env.
  * @env_changed: Flag indicating if the environment was changed.
  * @status: Return status of the last executed command.
- * @cmd_buf: Address of the pointer to the command buffer; used if chaining commands.
+ * @cmd_buf: Address of the pointer  used if chaining commands.
  * @cmd_buf_type: Type of command chaining (CMD_type ||, &&, ;).
  * @readfd: File descriptor from which to read line input.
  * @histcount: History line number count.
  */
 typedef struct passinfo
 {
-    char *arg;
-    char **argv;
-    char *path;
-    int argc;
-    unsigned int line_count;
-    int err_num;
-    int linecount_flag;
-    char *fname;
-    list_t *env;
-    list_t *history;
-    list_t *alias;
-    char **environ;
-    int env_changed;
-    int status;
+	char *arg;
+	char **argv;
+	char *path;
+	int argc;
+	unsigned int line_count;
+	int err_num;
+	int linecount_flag;
+	char *fname;
+	list_t *env;
+	list_t *history;
+	list_t *alias;
+	char **environ;
+	int env_changed;
+	int status;
 
-    char **cmd_buf; /* Pointer to cmd ; chain buffer, for memory management */
-    int cmd_buf_type; /* CMD_type ||, &&, ; */
-    int readfd;
-    int histcount;
+	char **cmd_buf; /* Pointer to cmd ; chain buffer, for memory management */
+	int cmd_buf_type; /* CMD_type ||, &&, ; */
+	int readfd;
+	int histcount;
 } info_t;
 
 #define INFO_INIT \
