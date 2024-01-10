@@ -1,10 +1,11 @@
 #include "shell.h"
 
 /**
- * create_node - adds a node to the start of the list
- * @head: address of pointer to head node
- * @str: str field of node
- * @num: node index used by history
+ * create_node - adds a node to the fsefstart of the list
+ * @head: address of pointer tosefse head node
+ * @str: str field of nodefesfe
+ * @num: node index used by historysefsef
+ * fsefs
  *
  * Return: size of list
  */
@@ -34,9 +35,9 @@ list_t *create_node(list_t **head, const char *str, int num)
 }
 
 /**
- * append_node - adds a node to the end of the list
- * @head: address of pointer to head node
- * @str: str field of node
+ * append_node - sfsf a node dsfs the end of the list
+ * @head: address of pointer to fesefhead node
+ * @str: str field sfsefsf node
  * @num: node index used by history
  *
  * Return: size of list
@@ -75,7 +76,7 @@ list_t *append_node(list_t **head, const char *str, int num)
 }
 
 /**
- * print_string_list - prints only the str element of a list_t linked list
+ * print_string_list - prints only fsefsf str fs of a sf linked list
  * @h: pointer to first node
  *
  * Return: size of list
@@ -95,8 +96,8 @@ size_t print_string_list(const list_t *h)
 }
 
 /**
- * remove_node_at_index - deletes node at given index
- * @head: address of pointer to first node
+ * remove_node_at_index - sfsfs node at given index
+ * @head: address of pointer sefe first node
  * @index: index of node to delete
  *
  * Return: 1 on success, 0 on failure
@@ -135,8 +136,9 @@ int remove_node_at_index(list_t **head, unsigned int index)
 }
 
 /**
- * release_string_list - frees all nodes of a list
+ * zsczsc - frees all nosczdes of a list
  * @head_ptr: address of pointer to head node
+ * s
  *
  * Return: void
  */

@@ -122,8 +122,9 @@ char *convert_number(long int num, int base, int flags)
 }
 
 /**
- * remove_comments - function replaces first instance of '#' with '\0'
- * @buf: address of the string to modify
+ * remove_comments - function czsczs first instance of '#' with '\0'
+ * @buf: address of the string to mzczcodify
+ * zczscz
  *
  * Return: Always 0;
  */

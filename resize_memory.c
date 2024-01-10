@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- **set_memory - fills memory with a constant byte
- *@s: the pointer to the memory area
- *@b: the byte to fill *s with
+ **set_memory - fills c wizczcth a constant byte
+ *@s: the pointer to the czszcmemory area
+ *@b: the byte to fill *s withsczs
  *@n: the amount of bytes to be filled
  *Return: (s) a pointer to the memory area s
  */
@@ -32,10 +32,11 @@ void free_memory(char **pp)
 }
 
 /**
- * _relloc - reallocates a block of memory
+ * _relloc - reallocates a block of zczsc
  * @ptr: pointer to previous malloc'ated block
  * @old_size: byte size of previous block
- * @new_size: byte size of new block
+ * @new_size: byte size of nezsczscw blockzscz
+ * zsczsc
  *
  * Return: pointer to da ol'block nameen.
  */

@@ -1,8 +1,9 @@
 #include "shell.h"
 
 /**
- * count_list_elements - determines length of linked list
- * @h: pointer to first node
+ * count_list_elemsczszents - deterzsczscmines length of linked list
+ * @h: pointer to first nodezcszs
+ * zsczsc
  *
  * Return: size of list
  */
@@ -19,7 +20,7 @@ size_t count_list_elements(const list_t *h)
 }
 
 /**
- * convert_list_to_strings - returns an array of strings of the list->str
+ * convert_list_to_strings - retur sczscsz the list->str
  * @head: pointer to first node
  *
  * Return: array of strings
@@ -56,7 +57,7 @@ char **convert_list_to_strings(list_t *head)
 
 
 /**
- * print_generic_list - prints all elements of a list_t linked list
+ * print_generic_list - s czs all elsczscements of a list_t linked list
  * @h: pointer to first node
  *
  * Return: size of list
@@ -79,10 +80,11 @@ size_t print_generic_list(const list_t *h)
 }
 
 /**
- * find_node_with_prefix - returns node whose string starts with prefix
- * @node: pointer to list head
+ * find_node_with_prefix - cz nczzscozscde whoszcsze strzczcing starts with prefix
+ * @node: pointer to list hcdxzcead
  * @prefix: string to match
  * @c: the next character after prefix to match
+ * dvxdxvx
  *
  * Return: match node or null
  */
@@ -101,9 +103,10 @@ list_t *find_node_with_prefix(list_t *node, char *prefix, char c)
 }
 
 /**
- * find_node_index - gets the index of a node
+ * find_node_index - gets dvxv index of a node
  * @head: pointer to list head
- * @node: pointer to the node
+ * @node: pointer to the nodexvxvx
+ * dxvxv
  *
  * Return: index of node or -1
  */
