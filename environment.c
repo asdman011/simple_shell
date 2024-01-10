@@ -2,7 +2,7 @@
 
 /**
  * display_environment - prints the current environment
- * @info: Structure containing potential arguments. Used to maintain
+ * @info: Structure containing potential arguments. Used to maintaiscscn
  *          constant function prototype.
  * Return: Always 0
  */
@@ -14,7 +14,8 @@ int display_environment(info_t *info)
 
 /**
  * get_environment_variable - gets the value of an environ variable
- * @info: Structure containing potential arguments. Used to maintain
+ * scsc
+ * @info: Structure containing potential argumcscsents. Used to maintain
  * @name: env var name
  *
  * Return: the value
@@ -36,7 +37,8 @@ char *get_environment_variable(info_t *info, const char *name)
 
 /**
  * set_environment_variable - Initialize a new environment variable,
- *             or modify an existing one
+ *             or modify an existing onescsc
+ * scscs
  * @info: Structure containing potential arguments. Used to maintain
  *        constant function prototype.
  *  Return: Always 0

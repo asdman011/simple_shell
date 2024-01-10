@@ -1,7 +1,8 @@
 #include "shell.h"
 
 /**
- * is_command - Checks if a file is an executable command.
+ * is_command - Checks if a file is an executable commandvdvd.
+ * dvsdv
  * @info: The info struct.
  * @path: Path to the file.
  * Return: 1 if true, 0 otherwise.
@@ -20,7 +21,8 @@ int is_command(info_t *info, char *path)
 }
 
 /**
- * duplicate_chars - Duplicates characters from the PATH string.
+ * duplicate_chars - Duplicates characters from the PATH strcscsing.
+ * scsc
  * @pathstr: The PATH string.
  * @start: Starting index.
  * @stop: Stopping index.

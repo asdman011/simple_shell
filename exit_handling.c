@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- **_strncpy - copies a string
+ **_strncpy - copies a stringscscsc
  *@dest: the destination string to be copied to
- *@src: the source string
+ *@src: the source stringscs
  *@n: the amount of characters to be copied
  *Return: the concatenated string
  */
@@ -31,8 +31,9 @@ char *_strncpy(char *dest, char *src, int n)
 }
 
 /**
- **_strncat - concatenates two strings
+ **_strncat - concatenates two stringsscsc
  *@dest: the first string
+ *the first string
  *@src: the second string
  *@n: the amount of bytes to be maximally used
  *Return: the concatenated string

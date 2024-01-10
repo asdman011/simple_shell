@@ -1,7 +1,8 @@
 #include "shell.h"
 
 /**
- * interactive_mode - returns true if shell is interactive_mode mode
+ * interactive_mode - returns true if shell is interactive_mode moscscsde
+ * scscsc
  * @info: struct address
  *
  * Return: 1 if interactive_mode mode, 0 otherwise
@@ -26,7 +27,7 @@ int is_delimiter(char c, char *delim)
 }
 
 /**
- *_isalpha - checks for alphabetic character
+ *_isalpha - checks for alphabetic charactscscer
  *@c: The character to input
  *Return: 1 if c is alphabetic, 0 otherwise
  */

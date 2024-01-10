@@ -20,7 +20,8 @@ void _eputs(char *str)
 }
 
 /**
- * _eputchar - writes the character c to stderr
+ * _eputchar - writes the character c to stderrscsc
+ * scscs
  * @c: The character to print
  *
  * Return: On success 1.
@@ -42,7 +43,8 @@ int _eputchar(char c)
 }
 
 /**
- * _putfd - writes the character c to given fd
+ * _putfd - writes the character c to given fdscsc
+ * scscs
  * @c: The character to print
  * @fd: The filedescriptor to write to
  *
@@ -65,9 +67,10 @@ int _putfd(char c, int fd)
 }
 
 /**
- *_putsfd - prints an input string
+ *_putsfd - prints an input stringscscs
  * @str: the string to be printed
  * @fd: the filedescriptor to write to
+ * scscs
  *
  * Return: the number of chars put
  */

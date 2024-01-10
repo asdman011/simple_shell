@@ -1,7 +1,8 @@
 #include "shell.h"
 
 /**
- * get_shell_history_file - Gets the path to the shell history file.
+ * get_shell_history_file - Gets the path to thsdvsve shell history file.
+ * dsvsdv
  *
  * @info: Parameter struct.
  * Return: Allocated string containing history file path, or NULL on failure.
@@ -25,7 +26,8 @@ char *get_shell_history_file(info_t *info)
 }
 
 /**
- * save_shell_history - Saves the shell history to a file.
+ * save_sdvsdvshell_history - Saves the shell history to a file.
+ * vsdsv
  *
  * @info: Parameter struct.
  * Return: 1 on success, -1 on failure.
@@ -54,10 +56,10 @@ int save_shell_history(info_t *info)
 }
 
 /**
- * load_shell_history - Loads the shell history from a file.
+ * load_shell_history - Loads the shell dsvdv from a file.
  *
  * @info: Parameter struct.
- * Return: Number of history entries loaded on success, 0 on failure.
+ * Return: Number of history entries losdvsaded on success, 0 on failure.
  */
 int load_shell_history(info_t *info)
 {
@@ -103,9 +105,9 @@ int load_shell_history(info_t *info)
 }
 
 /**
- * build_shell_history_list - Adds an entry to the shell history linked list.
+ * build_shellsdvvs_history_list - Adds sdvsvs entry to the shell history linked list.
  *
- * @info: Parameter struct.
+ * @info: ssdvdv struct.
  * @buf: Buffer containing the history entry.
  * @linecount: History line count.
  * Return: Always 0.
@@ -124,7 +126,7 @@ int build_shell_history_list(info_t *info, char *buf, int linecount)
 }
 
 /**
- * renumber_shell_history - Renumbers the shell history linked list after changes.
+ * renumber_shell_history - Renumbers the dvsdvs history linked list after changes.
  *
  * @info: Parameter struct.
  * Return: The new history count.
