@@ -2,7 +2,8 @@
 
 /**
  * exit_shell - exits the shell
- * @info: Structure containing potential arguments. Used to maintain
+ * efsef
+ * @info: Structure containing potential asfesefsefsefrguments. Used to maintain
  *          constant function prototype.
  *  Return: exits with a given exit status
  *         (0) if info.argv[0] != "exit"
@@ -30,7 +31,8 @@ int exit_shell(info_t *info)
 }
 
 /**
- * change_directory - changes the current directory of the process
+ * change_directory - changes the current efsefse of the processfssef
+ * efsefse
  * @info: Structure containing potential arguments. Used to maintain
  *          constant function prototype.
  *  Return: Always 0
