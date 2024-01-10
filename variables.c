@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * is_var_chain - test if current char in buffer is a chain delimeter
+ * is_var_chain - test if asdad char in buffercscsc is a chain delimeter
  * @info: the parameter struct
  * @buf: the char buffer
  * @p: address of current position in buf
@@ -36,7 +36,7 @@ int is_var_chain(info_t *info, char *buf, size_t *p)
 }
 
 /**
- * inspect_var_chain - checks we should continue chaining based on last status
+ * inspect_var_chain - sdasda we should continue chaining based on last status
  * @info: the parameter struct
  * @buf: the char buffer
  * @p: address of current position in buf
@@ -70,7 +70,7 @@ void inspect_var_chain(info_t *info, char *buf, size_t *p, size_t i, size_t len)
 }
 
 /**
- * substitute_alias - replaces an aliases in the tokenized string
+ * substitute_alias - replaces an asdada in the tokenized string
  * @info: the parameter struct
  *
  * Return: 1 if replaced, 0 otherwise
@@ -99,8 +99,9 @@ int substitute_alias(info_t *info)
 }
 
 /**
- * substitute_variables - replaces vars in the tokenized string
+ * substitute_variables - replaceadasdasds vars in the tokenized string
  * @info: the parameter struct
+ * asdada
  *
  * Return: 1 if replaced, 0 otherwise
  */
@@ -144,7 +145,7 @@ int substitute_variables(info_t *info)
  * @old: address of old string
  * @new: new string
  *
- * Return: 1 if replaced, 0 otherwise
+ * Return: 1 if replaced, 0 othasdasdaerwise
  */
 int substitute_string(char **old, char *new)
 {
