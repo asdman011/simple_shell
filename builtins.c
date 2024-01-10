@@ -18,8 +18,8 @@ int _myexit(info_t *info)
 		{
 			info->status = 2;
 			print_error(info, "Illegal number: ");
-			print_error_string(info->argv[1]);
-			print_error_string('\n');
+			_eputs(info->argv[1]);
+			_eputchar('\n');
 			return (1);
 		}
 		info->err_num = _erratoi(info->argv[1]);
@@ -69,7 +69,7 @@ int _mycd(info_t *info)
 	if (chdir_ret == -1)
 	{
 		print_error(info, "can't cd to ");
-		print_error_string(info->argv[1]), print_error_string('\n');
+		_eputs(info->argv[1]), _eputchar('\n');
 	}
 	else
 	{
