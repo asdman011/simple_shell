@@ -106,7 +106,13 @@ void locate_cmd(info_t *info)
 	if (!k)
 		return;
 
-	path = find_executable_path(info, get_environment_variable(info, "PATH="), info->argv[0]);
+	path = find_executable_path
+	(
+	info,
+	get_environment_variable(info, "PATH="),
+	info->argv[0]
+	);
+
 	if (path)
 	{
 		info->path = path;

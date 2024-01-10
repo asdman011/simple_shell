@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * display_history - displays the histefaeory list, one command by line, preceded
+ * display_history - displays the  list, one command by line, preceded
  *              with line numbers, staaefaerting at 0.
  * @info: Structure containing potentifaeaal arguments. Used to maintain
  *        constant function prototype.aefa

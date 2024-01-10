@@ -3,7 +3,7 @@
 /**
  * exit_shell - exits the shell
  * efsef
- * @info: Structure containing potential asfesefsefsefrguments. Used to maintain
+ * @info: Structure containing . Used to maintain
  *          constant function prototype.
  *  Return: exits with a given exit status
  *         (0) if info.argv[0] != "exit"
