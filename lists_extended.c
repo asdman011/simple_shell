@@ -80,7 +80,7 @@ size_t print_generic_list(const list_t *h)
 }
 
 /**
- * find_node_with_prefix - cz nczzscozscde whoszcsze strzczcing starts with prefix
+ * find_node_with_prefix - cz   strzczcing starts with prefix
  * @node: pointer to list hcdxzcead
  * @prefix: string to match
  * @c: the next character after prefix to match

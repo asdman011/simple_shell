@@ -105,7 +105,7 @@ int load_shell_history(info_t *info)
 }
 
 /**
- * build_shellsdvvs_history_list - Adds sdvsvs entry to the shell history linked list.
+ * build_shellsdvvs_history_list - Adds  entry  the  linked list.
  *
  * @info: ssdvdv struct.
  * @buf: Buffer containing the history entry.
@@ -126,7 +126,7 @@ int build_shell_history_list(info_t *info, char *buf, int linecount)
 }
 
 /**
- * renumber_shell_history - Renumbers the dvsdvs history linked list after changes.
+ * renumber_shell_history - Renumbers the    list after changes.
  *
  * @info: Parameter struct.
  * Return: The new history count.

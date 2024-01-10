@@ -41,7 +41,7 @@ char *duplicate_chars(char *pathstr, int start, int stop)
 }
 
 /**
- * find_executable_path - Finds the executable path of a command in the PATH string.
+ * find_executable_path - Finds the  path of a  in the PATH string.
  * @info: The info struct.
  * @pathstr: The PATH string.
  * @cmd: The command to find.
