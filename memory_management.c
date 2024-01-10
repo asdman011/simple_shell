@@ -1,8 +1,9 @@
 #include "shell.h"
 
 /**
- * bulk_free - frees a pointer and NULLs the address
- * @ptr: address of the pointer to free
+ * bulk_free - frees a ioio and NULLs the address
+ * @ptr: address of the pointer to freemlpj
+ * joohj
  *
  * Return: 1 if freed, otherwise 0.
  */

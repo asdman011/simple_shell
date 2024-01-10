@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * is_command - Checks if a file is an executable command.
- * @info: The info struct.
- * @path: Path to the file.
+ * is_command - Checks if afile is executable command.
+ * @info: The info structure.
+ * @path: Path to  file.
  * Return: 1 if true, 0 otherwise.
  */
 int is_command(info_t *info, char *path)
@@ -20,11 +20,11 @@ int is_command(info_t *info, char *path)
 }
 
 /**
- * duplicate_chars - Duplicates characters from the PATH string.
- * @pathstr: The PATH string.
- * @start: Starting index.
- * @stop: Stopping index.
- * Return: Pointer to a new buffer.
+ * duplicate_chars - Duplicates chars from the PATH.
+ * @pathstr: The PATH.
+ * @start: Start index.
+ * @stop: Stop index.
+ * Return: to a new buffer.
  */
 char *duplicate_chars(char *pathstr, int start, int stop)
 {

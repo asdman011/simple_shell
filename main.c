@@ -1,9 +1,10 @@
 #include "shell.h"
 
 /**
- * main - entry point
+ * main - entry scspoint
  * @ac: arg count
  * @av: arg vector
+ * scsac
  *
  * Return: 0 on success, 1 on error
  */

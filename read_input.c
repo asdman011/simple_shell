@@ -1,10 +1,11 @@
 #include "shell.h"
 
 /**
- * input_buf - buffers chained commands
+ * input_buf - buffers chscsained commands
  * @info: parameter struct
- * @buf: address of buffer
+ * @buf: address of buffescscr
  * @len: address of len var
+ * scscxssd
  *
  * Return: bytes read
  */
@@ -46,7 +47,8 @@ ssize_t input_buf(info_t *info, char **buf, size_t *len)
 
 /**
  * read_input - gets a line minus the newline
- * @info: parameter struct
+ * @info: parameter structscxss
+ * scszz
  *
  * Return: bytes read
  */
@@ -114,6 +116,7 @@ ssize_t read_buf(info_t *info, char *buf, size_t *i)
  * @info: parameter struct
  * @ptr: address of pointer to buffer, preallocated or NULL
  * @length: size of preallocated ptr buffer if not NULL
+ * dsxvxvc
  *
  * Return: s
  */
@@ -157,8 +160,9 @@ int get_line(info_t *info, char **ptr, size_t *length)
 }
 
 /**
- * handle_interrupt_signal - blocks ctrl-C
- * @sig_num: the signal number
+ * handle_interrupt_signal - bldvdvocks ctrl-C
+ * @sig_num: the signal numbevdvr
+ * cccdv
  *
  * Return: void
  */

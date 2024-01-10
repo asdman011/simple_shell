@@ -3,7 +3,8 @@
 /**
  * _strcpy - copies a string
  * @dest: the destination
- * @src: the source
+ * @src: the sourcedvdsvc
+ * sdvsvcvsd
  *
  * Return: pointer to destination
  */
@@ -23,8 +24,9 @@ char *_strcpy(char *dest, char *src)
 }
 
 /**
- * _strdup - duplicates a string
- * @str: the string to duplicate
+ * _strdup - duplicates a stridvsdvng
+ * @str: the string to duplicatesvds
+ * dscvsdds
  *
  * Return: pointer to the duplicated string
  */
@@ -46,9 +48,10 @@ char *_strdup(const char *str)
 }
 
 /**
- *_puts - prints an input string
- *@str: the string to be printed
- *
+ *_puts - printsdvsvs an input string
+ *@str: the string to be printedvsdvd
+ *scvscddvxv
+ * 
  * Return: Nothing
  */
 void _puts(char *str)
@@ -67,7 +70,8 @@ void _puts(char *str)
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
- *
+ * dvcxdxdvxxdvx
+ * vdszxvcx vc
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */

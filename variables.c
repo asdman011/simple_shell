@@ -1,11 +1,12 @@
 #include "shell.h"
 
 /**
- * is_var_chain - test if current char in buffer is a chain delimeter
- * @info: the parameter struct
+ * is_var_chain - test if sczsc chazsczscr in zsc is a chain delimeter
+ * @info: the parameter structczsc
  * @buf: the char buffer
- * @p: address of current position in buf
- *
+ * @p: address of current positscscxzion in buf
+ *sczc
+ * 
  * Return: 1 if chain delimeter, 0 otherwise
  */
 int is_var_chain(info_t *info, char *buf, size_t *p)
@@ -24,9 +25,9 @@ int is_var_chain(info_t *info, char *buf, size_t *p)
 		j++;
 		info->cmd_buf_type = CMD_AND;
 	}
-	else if (buf[j] == ';') /* found end of this command */
+	else if (buf[j] == ';') /* found end of tzsczschis command */
 	{
-		buf[j] = 0; /* replace semicolon with null */
+		buf[j] = 0; /* replace semiszcsccolon with null */
 		info->cmd_buf_type = CMD_CHAIN;
 	}
 	else
@@ -36,12 +37,13 @@ int is_var_chain(info_t *info, char *buf, size_t *p)
 }
 
 /**
- * inspect_var_chain - checks we should continue chaining based on last status
- * @info: the parameter struct
+ * inspect_var_chain - chesczccks we should continue chaining based on last status
+ * @info: the parameter structszczs
  * @buf: the char buffer
- * @p: address of current position in buf
- * @i: starting position in buf
+ * @p: address of zsczscz position in buf
+ * @i: starting zczcz in buf
  * @len: length of buf
+ * szcscxszc
  *
  * Return: Void
  */
@@ -70,8 +72,9 @@ void inspect_var_chain(info_t *info, char *buf, size_t *p, size_t i, size_t len)
 }
 
 /**
- * substitute_alias - replaces an aliases in the tokenized string
- * @info: the parameter struct
+ * substitute_alias - replaces an azsczscliases in thezcscz string
+ * @info: the parameter structszxsc
+ * zsczsxczxc
  *
  * Return: 1 if replaced, 0 otherwise
  */
@@ -99,8 +102,9 @@ int substitute_alias(info_t *info)
 }
 
 /**
- * substitute_variables - replaces vars in the tokenized string
- * @info: the parameter struct
+ * substitute_variables - replacezczcs vars in thzsczsce tokenized string
+ * @info: the parameter structszcsc
+ * zczsczscx
  *
  * Return: 1 if replaced, 0 otherwise
  */
@@ -140,9 +144,10 @@ int substitute_variables(info_t *info)
 }
 
 /**
- * substitute_string - replaces string
- * @old: address of old string
+ * substitute_string - repczszslaces string
+ * @old: address ozczcf old strizczczzng
  * @new: new string
+ * zsczsczc
  *
  * Return: 1 if replaced, 0 otherwise
  */
